@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+*.egg
+
+# Data and large outputs (not redistributable / too large)
+data/
+results/preds/
+results/sn_agree_*.csv
+results/unshown*.json
+results/revision*.json
+results/study*.json
+results/optimize*.json
+results/rq3*.json
+results/per_fold/
+results/revision_smoke/
+results/ablation_s*.csv
+results/degradation_s*.csv
+results/diagnostic_s*.csv
+results/main_results_s*.csv
+results/rare_s*.csv
+results/selective_s*.csv
+results/summary_s*.json
+
+# Trained checkpoints and predictions
+models/
+baselines/server_sync/
+
+# Hugging Face upload staging
+hf_upload/
+.hf_repo
+
+# LaTeX build artifacts (belong in manuscript/)
+*.aux *.bbl *.blg *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.pdf
+
+# Misc
+.DS_Store
+*.swp

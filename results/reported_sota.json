@@ -1,0 +1,30 @@
+{
+  "_note": "Published SoccerNet-v2 TEST-split average-mAP of prior spotting systems, transcribed for context only (different backbones/features; not re-run). Sources verified 2026-09-05.",
+  "rows": [
+    {
+      "name": "NetVLAD++",
+      "cite": "giancola2021netvladpp",
+      "features": "ResNet-152 PCA-512 (same features as ours)",
+      "loose": 53.4,
+      "tight": null,
+      "source": "arXiv:2104.06779 abstract: '53.4% Average-mAP for action spotting'"
+    },
+    {
+      "name": "Zhou et al.",
+      "cite": "zhou2021baidu",
+      "features": "combined fine-tuned video backbones",
+      "loose": 73.77,
+      "tight": 47.05,
+      "source": "Hong et al. 2022 (arXiv:2207.10213), test-split table"
+    },
+    {
+      "name": "E2E-Spot 800MF",
+      "cite": "hong2022spotting",
+      "features": "end-to-end on RGB frames",
+      "loose": 74.05,
+      "tight": 61.82,
+      "source": "Hong et al. 2022 (arXiv:2207.10213), test-split table"
+    }
+  ],
+  "note": "published test-split results quoted for context; we keep the strongest video-input systems only, to bound the range without a long citation tail"
+}

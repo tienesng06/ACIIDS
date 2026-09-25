@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this artifact."
+title: "AGREE Artifact: Branch Evidence and Temporal Context for Selective Event Spotting"
+type: software
+version: 1.0.0-review
+date-released: 2026-09-07
+authors:
+  - family-names: "Anonymous"
+    given-names: "Authors"

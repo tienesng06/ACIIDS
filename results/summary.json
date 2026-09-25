@@ -1,0 +1,240 @@
+{
+  "tau0_by_seed": {
+    "0": 0.4,
+    "1": 0.4,
+    "2": 0.4,
+    "3": 0.4,
+    "4": 0.3
+  },
+  "omega_by_seed": {
+    "0": 0.6,
+    "1": 0.7000000000000001,
+    "2": 0.6,
+    "3": 0.6,
+    "4": 0.5
+  },
+  "tau_by_seed": {
+    "0": NaN,
+    "1": NaN,
+    "2": NaN,
+    "3": NaN,
+    "4": NaN
+  },
+  "lambda_by_seed": {
+    "0": 0.5,
+    "1": 0.5,
+    "2": 0.5,
+    "3": 0.5,
+    "4": 0.5
+  },
+  "combiner_by_seed": {
+    "0": {
+      "class_inter": true,
+      "C": 0.03,
+      "cv_aurc": 0.15598292337327282
+    },
+    "1": {
+      "class_inter": true,
+      "C": 0.03,
+      "cv_aurc": 0.17590958474495286
+    },
+    "2": {
+      "class_inter": true,
+      "C": 0.03,
+      "cv_aurc": 0.15357362541527714
+    },
+    "3": {
+      "class_inter": true,
+      "C": 0.03,
+      "cv_aurc": 0.1618470021897686
+    },
+    "4": {
+      "class_inter": true,
+      "C": 0.03,
+      "cv_aurc": 0.21558682318281874
+    }
+  },
+  "rerank_by_seed": {
+    "0": {
+      "thr": 0.05,
+      "class_inter": true,
+      "C": 1.0,
+      "val_map": 0.5942809110733962,
+      "no_struct": {
+        "thr": 0.05,
+        "class_inter": true,
+        "C": 0.1,
+        "val_map": 0.5636191372083302
+      }
+    },
+    "1": {
+      "thr": 0.05,
+      "class_inter": true,
+      "C": 0.1,
+      "val_map": 0.5802966927485845,
+      "no_struct": {
+        "thr": 0.1,
+        "class_inter": true,
+        "C": 0.3,
+        "val_map": 0.560862055902325
+      }
+    },
+    "2": {
+      "thr": 0.05,
+      "class_inter": true,
+      "C": 0.1,
+      "val_map": 0.5861646314972133,
+      "no_struct": {
+        "thr": 0.1,
+        "class_inter": true,
+        "C": 0.3,
+        "val_map": 0.5627730066422875
+      }
+    },
+    "3": {
+      "thr": 0.05,
+      "class_inter": true,
+      "C": 0.1,
+      "val_map": 0.5723486205355365,
+      "no_struct": {
+        "thr": 0.1,
+        "class_inter": true,
+        "C": 0.1,
+        "val_map": 0.5508271978403267
+      }
+    },
+    "4": {
+      "thr": 0.05,
+      "class_inter": true,
+      "C": 0.1,
+      "val_map": 0.5866114475440676,
+      "no_struct": {
+        "thr": 0.1,
+        "class_inter": true,
+        "C": 1.0,
+        "val_map": 0.5522188203229541
+      }
+    }
+  },
+  "rare_val_by_seed": {
+    "0": {
+      "Penalty": 24,
+      "Red card": 0,
+      "Yellow->red card": 0
+    },
+    "1": {
+      "Penalty": 40,
+      "Red card": 0,
+      "Yellow->red card": 0
+    },
+    "2": {
+      "Penalty": 42,
+      "Red card": 0,
+      "Yellow->red card": 0
+    },
+    "3": {
+      "Penalty": 39,
+      "Red card": 0,
+      "Yellow->red card": 0
+    },
+    "4": {
+      "Penalty": 51,
+      "Red card": 0,
+      "Yellow->red card": 0
+    }
+  },
+  "n_valid_games": 100,
+  "n_test_games": 100,
+  "rare_classes": [
+    "Penalty",
+    "Red card",
+    "Yellow->red card"
+  ],
+  "class_counts_train": {
+    "Penalty": 96,
+    "Kick-off": 1516,
+    "Goal": 995,
+    "Substitution": 1700,
+    "Offside": 1265,
+    "Shots on target": 3463,
+    "Shots off target": 3214,
+    "Clearance": 4749,
+    "Ball out of play": 19097,
+    "Throw-in": 11391,
+    "Foul": 7084,
+    "Indirect free-kick": 6331,
+    "Direct free-kick": 1379,
+    "Corner": 2884,
+    "Yellow card": 1238,
+    "Red card": 34,
+    "Yellow->red card": 24
+  },
+  "validation_folds": "five-fold GroupKFold by match",
+  "aurc_ties": "expected risk under uniform ordering within equal-score blocks",
+  "analysis_started_utc": "2026-09-07T07:31:52Z",
+  "analysis_finished_utc": "2026-09-07T08:48:13Z",
+  "analysis_command": "src/run_pipeline.py --seeds 0 --ens-seeds 0 1 2 3 4 --out-dir revision_final --out-tag _s0 --n-boot 1000 --n-boot-map 1000",
+  "ci": {
+    "aurc_diff": [
+      0.05915769855332009,
+      0.054178702746763355,
+      0.06481922497933705
+    ],
+    "aurc_rel": [
+      28.844409658828408,
+      26.58084955647534,
+      31.229072513356165
+    ],
+    "aurc_diff_cc": [
+      0.026693143128218466,
+      0.023414834479519427,
+      0.03047735750278131
+    ],
+    "aurc_rel_cc": [
+      15.462823914470919,
+      13.838982260836055,
+      17.28603637019735
+    ],
+    "aurc_diff_cal": [
+      0.03246455542510163,
+      0.02818404265198844,
+      0.03707113777904208
+    ],
+    "map_diff": [
+      0.029273458378091255,
+      0.02477751571049731,
+      0.03484076413738674
+    ],
+    "map_diff_testwide": [
+      0.04616745931545374,
+      0.038094411888236,
+      0.05738213478231617
+    ],
+    "map_diff_ctx": [
+      0.016844536417939593,
+      0.012808750756548247,
+      0.02253698591638664
+    ],
+    "unshown_diff_ctx": [
+      0.03623910884082249,
+      0.026220730732622734,
+      0.043094690059335826
+    ],
+    "n_boot_map": 1000,
+    "n_boot": 1000
+  },
+  "omega": 0.6,
+  "tau": NaN,
+  "lambda": 0.5,
+  "tau0": 0.4,
+  "f1_valid_at_tau0": 0.6244581057581621,
+  "n_cand_test": 20180,
+  "n_cand_valid": 19382,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

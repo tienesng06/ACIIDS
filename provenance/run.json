@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-07T09:38:15.367967+00:00",
+  "git_revision": "f5f7e7c9be14652829e5b674e8bf6614bd12b399",
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "full_manifest": true,
+  "git_dirty": true,
+  "result_dir": "artifact/results",
+  "validation_folds": "GroupKFold by match",
+  "aurc_ties": "expected risk under uniform ordering within equal-score blocks",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "torch": "2.12.0",
+    "SoccerNet": "0.1.62",
+    "pandas": "3.0.3",
+    "matplotlib": "3.10.9"
+  },
+  "command": "artifact/src/write_provenance.py --full",
+  "dataset": "SoccerNet-v2",
+  "split": "300 train / 100 validation / 100 test matches",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_valid_games": 100,
+  "n_test_games": 100,
+  "analysis_started_utc": "2026-09-07T07:31:52Z",
+  "analysis_finished_utc": "2026-09-07T08:48:13Z",
+  "analysis_command": "src/run_pipeline.py --seeds 0 --ens-seeds 0 1 2 3 4 --out-dir revision_final --out-tag _s0 --n-boot 1000 --n-boot-map 1000"
+}

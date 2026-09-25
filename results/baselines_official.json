@@ -1,0 +1,158 @@
+{
+  "rows": [
+    {
+      "name": "NetVLAD++",
+      "cite": "giancola2021netvladpp",
+      "n_runs": 5,
+      "runs": [
+        {
+          "loose": 0.5088099210857607,
+          "loose_visible": 0.5562569560431911,
+          "loose_unshown": 0.37592619038617087,
+          "tight": 0.11519991156584408,
+          "tight_visible": 0.12347354517176827,
+          "tight_unshown": 0.1055296410210629,
+          "run": "run_0"
+        },
+        {
+          "loose": 0.5041704659915694,
+          "loose_visible": 0.5551760114561104,
+          "loose_unshown": 0.35363746432599785,
+          "tight": 0.1180572210738266,
+          "tight_visible": 0.12631585450429006,
+          "tight_unshown": 0.09217844910054157,
+          "run": "run_1"
+        },
+        {
+          "loose": 0.5072268592570726,
+          "loose_visible": 0.5573874834157612,
+          "loose_unshown": 0.3761996332923848,
+          "tight": 0.11952757413836244,
+          "tight_visible": 0.12657504865715766,
+          "tight_unshown": 0.11757288091785488,
+          "run": "run_2"
+        },
+        {
+          "loose": 0.5059450428698018,
+          "loose_visible": 0.5530711330639954,
+          "loose_unshown": 0.3769277904439083,
+          "tight": 0.11826323631818084,
+          "tight_visible": 0.12679424228469693,
+          "tight_unshown": 0.10931726494400171,
+          "run": "run_3"
+        },
+        {
+          "loose": 0.5053197670830923,
+          "loose_visible": 0.5539536192340505,
+          "loose_unshown": 0.3760599953137139,
+          "tight": 0.11837552605157341,
+          "tight_visible": 0.12697314217977126,
+          "tight_unshown": 0.11441596221151913,
+          "run": "run_4"
+        }
+      ],
+      "loose": [
+        0.5062944112574593,
+        0.0015987734046875822
+      ],
+      "loose_visible": [
+        0.5551690406426217,
+        0.0015481319231643407
+      ],
+      "loose_unshown": [
+        0.37175021475243514,
+        0.009062994255486612
+      ],
+      "tight": [
+        0.11788469382955749,
+        0.0014367385182061825
+      ],
+      "tight_visible": [
+        0.12602636655953686,
+        0.0012952041967671422
+      ],
+      "tight_unshown": [
+        0.10780283963899603,
+        0.00884047048984363
+      ],
+      "note": "official code (SoccerNet/sn-spotting TemporallyAwarePooling) retrained on our ResNet-152 PCA-512 features; seed 0 on a local Apple-silicon GPU (code patched for device/float32), seeds 1-4 on an H100 MIG slice; test split scored with SoccerNet.Evaluation.ActionSpotting.evaluate"
+    },
+    {
+      "name": "CALF",
+      "cite": "cioppa2020calf",
+      "n_runs": 5,
+      "runs": [
+        {
+          "loose": 0.4265628602302167,
+          "loose_visible": 0.44072082714966676,
+          "loose_unshown": 0.3272657321077792,
+          "tight": 0.13902563734464002,
+          "tight_visible": 0.1409810265152917,
+          "tight_unshown": 0.13033043004501843,
+          "run": "run_0"
+        },
+        {
+          "loose": 0.3991079357888934,
+          "loose_visible": 0.422972442156138,
+          "loose_unshown": 0.28562851640323167,
+          "tight": 0.09892944892115557,
+          "tight_visible": 0.1038228657830773,
+          "tight_unshown": 0.07358735271192078,
+          "run": "run_1"
+        },
+        {
+          "loose": 0.41373834806968685,
+          "loose_visible": 0.4377811617680523,
+          "loose_unshown": 0.2825922488129707,
+          "tight": 0.12091367043021539,
+          "tight_visible": 0.1274167734511413,
+          "tight_unshown": 0.0797682102571955,
+          "run": "run_2"
+        },
+        {
+          "loose": 0.39240850517675424,
+          "loose_visible": 0.4127683729577638,
+          "loose_unshown": 0.27330074285903355,
+          "tight": 0.10503744000857416,
+          "tight_visible": 0.11399464344980531,
+          "tight_unshown": 0.060337510150938904,
+          "run": "run_3"
+        },
+        {
+          "loose": 0.40949976062715815,
+          "loose_visible": 0.42768551856984516,
+          "loose_unshown": 0.29173658374528205,
+          "tight": 0.13718617042953896,
+          "tight_visible": 0.14000037419477526,
+          "tight_unshown": 0.08904139114905116,
+          "run": "run_4"
+        }
+      ],
+      "loose": [
+        0.4082634819785419,
+        0.011845455697666294
+      ],
+      "loose_visible": [
+        0.4283856645202932,
+        0.0101402621474054
+      ],
+      "loose_unshown": [
+        0.29210476478565944,
+        0.018560442743449045
+      ],
+      "tight": [
+        0.12021847342682483,
+        0.016283622417202118
+      ],
+      "tight_visible": [
+        0.12524313667881817,
+        0.014529546019029057
+      ],
+      "tight_unshown": [
+        0.08661297886282496,
+        0.023765650733848617
+      ],
+      "note": "official code (SoccerNet/sn-spotting CALF) retrained on our ResNet-152 PCA-512 features on an H100 MIG slice, five seeds; test split scored with SoccerNet.Evaluation.ActionSpotting.evaluate"
+    }
+  ]
+}
