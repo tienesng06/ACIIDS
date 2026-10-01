@@ -2,7 +2,7 @@
 
 **Paper:** Branch Evidence and Temporal Context for Selective Event Spotting  
 **Venue:** ACIIDS 2027 (Springer LNCS/LNAI)  
-**Authors:** Tien-Anh Nguyen, Thanh-Hai Tran, Xuan-Bach Le — Ho Chi Minh City University of Technology (HCMUT), VNUHCM
+**Authors:** Tien-Anh Nguyen, Xuan-Bach Le — Ho Chi Minh City University of Technology (HCMUT), VNUHCM
 
 This repository contains the source code, canonical results, and reproduction instructions for the paper. Every number reported in the paper is generated from `results/*.csv` and `results/summary.json` by `src/render.py`; no value is hard-coded in the LaTeX source.
 
@@ -147,7 +147,7 @@ See `REPRODUCE.md` for detailed instructions and expected intermediate outputs.
 
 If you use this code or results, please cite:
 ```
-Nguyen, T.-A., Tran, T.-H., Le, X.-B. (2027).
+Nguyen, T.-A., Le, X.-B. (2027).
 Branch Evidence and Temporal Context for Selective Event Spotting.
 In: Proceedings of ACIIDS 2027. Springer LNCS/LNAI.
 ```
